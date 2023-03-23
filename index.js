@@ -1,11 +1,12 @@
 import axios from "axios";
 import Webflow from "webflow-api";
-import Bottleneck from "bottleneck";
-import getYear from "date-fns/getYear/index.js";
-import { parseISO } from "date-fns";
 import * as dotenv from "dotenv";
 import _ from "lodash";
 
+// import categories from './data/categories.json'
+// import purposes from './data/purposes.json'
+// import purposeStatuses from './data/purposeStatuses.json'
+// import subcategories from './data/subcategories.json'
 import categories from './data/categories.json' assert { type: "json" }
 import purposes from './data/purposes.json' assert { type: "json" }
 import purposeStatuses from './data/purposeStatuses.json' assert { type: "json" }
@@ -18,8 +19,6 @@ const WHISE_USER = process.env.WHISE_USER
 const WHISE_PASS = process.env.WHISE_PASSWORD
 const CLIENTID = 9654;
 const OFFICEID = 12121;
-
-
 
 var pandNaam
 var pandSlug
@@ -34,6 +33,13 @@ var pandAantalSlaapkamers
 var pandCategory
 var pandSubcategory
 var pandCustomCode
+
+// (async () => {
+
+
+//     return { webflow, site, collection, allItems }
+//  })()
+
 
 async function whiseGetToken() {
   let url = WHISE_BASEURL + 'token';
@@ -50,7 +56,6 @@ async function whiseGetToken() {
           {
               headers: headers
           });
-
       if (resp && resp.data && resp.data.token) {
           return resp.data.token;
       }
@@ -84,7 +89,6 @@ async function whiseGetClientToken() {
       console.log(e);
   }
 }
-// const getWhiseFields = 
 
 async function whiseGetData() {
     let url = WHISE_BASEURL + 'v1/estates/list';
@@ -95,7 +99,7 @@ async function whiseGetData() {
     let body = {
         Page: {
             Limit: 1,
-            Offset: 5
+            Offset: 6
         }
     };
 
@@ -113,7 +117,7 @@ async function whiseGetData() {
                 pandNaam = estate.name
                 pandSlug = estate.id
                 pandSlug =  pandSlug.toString()
-                pandThumbnail = estate.pictures[0].urlSmall
+                pandThumbnail = estate.pictures[0].urlLarge
                 pandStatus = getPurpose()
                 pandPrijs = estate.price
                 pandPrijs = pandPrijs.toString()
@@ -195,9 +199,26 @@ async function whiseGetData() {
                 //     }
                 // }
 
-
                 pandCustomCode = JSON.stringify(pandCustomCode)
-                return { pandNaam, pandSlug, pandThumbnail, pandStatus, pandPrijs, pandAdresLine1, pandAdresLine2, pandLocatie, pandAantalBadkamers, pandAantalSlaapkamers, pandCategory, pandSubcategory, pandCustomCode }
+
+                const fields = {
+                    name: pandNaam,
+                    status: pandStatus,
+                    prijs: pandPrijs,
+                    thumbnail: pandThumbnail,
+                    'adres-line-1': pandAdresLine1,
+                    'adres-line-2': pandAdresLine2,
+                    'aantal-slaapkamers': pandAantalSlaapkamers,
+                    'aantal-badkamers': pandAantalBadkamers,
+                    locatie: pandLocatie,
+                    'custom-code': pandCustomCode,
+                    _archived: false,
+                    _draft: false,
+                    slug: pandSlug,
+                  };
+
+                  return fields
+                // return { pandNaam, pandSlug, pandThumbnail, pandStatus, pandPrijs, pandAdresLine1, pandAdresLine2, pandLocatie, pandAantalBadkamers, pandAantalSlaapkamers, pandCategory, pandSubcategory, pandCustomCode }
             }
         }
     }
@@ -206,25 +227,14 @@ async function whiseGetData() {
     }
 };
 
-const whiseFields = await whiseGetData()
+whiseGetData()
+// console.log(whiseFields)
 
-const fields = {
-  name: whiseFields.pandNaam,
-  status: whiseFields.pandStatus,
-  prijs: whiseFields.pandPrijs,
-  thumbnail: whiseFields.pandThumbnail,
-  'adres-line-1': whiseFields.pandAdresLine1,
-  'adres-line-2': whiseFields.pandAdresLine2,
-  'aantal-slaapkamers': whiseFields.pandAantalSlaapkamers,
-  'aantal-badkamers': whiseFields.pandAantalBadkamers,
-  locatie: whiseFields.pandLocatie,
-  'custom-code': whiseFields.pandCustomCode,
-  _archived: false,
-  _draft: false,
-  slug: whiseFields.pandSlug,
-};
 
-console.log( fields.thumbnail )
+// console.log( fields.thumbnail )
+
+// alert('Whise: ' + fields.name)
+
 
 const webflow = new Webflow({ token: process.env.WF_API_KEY });
 
@@ -232,26 +242,25 @@ const site = await webflow.site({ siteId: "636134ed842a02654a3bbfe4" });
 const { rateLimit } = site._meta;
 const collection = await webflow.collection({ collectionId: "6414a4b48fdbc81367c66506" });
 
-// console.log(collection)
 const allItems = await collection.items()
-
 const filtered = _.filter(allItems.items, { slug: fields.slug })
 
-if ( filtered.length === 0 ) {
+  if ( filtered.length === 0 ) {
   const createdItem = await webflow.createItem({
-    collectionId: '6414a4b48fdbc81367c66506', fields,
+      collectionId: '6414a4b48fdbc81367c66506', fields,
   })
   const publishedItem = await webflow.publishItems({
-    collectionId: "6414a4b48fdbc81367c66506", itemIds: [createdItem._id], live: true,
+      collectionId: "6414a4b48fdbc81367c66506", itemIds: [createdItem._id], live: true,
   })
-  console.log('Created: ')
-} else {
+  alert('Created: ')
+  } else {
   const updatedItem = await webflow.updateItem({
-    collectionId: "6414a4b48fdbc81367c66506", itemId: filtered[0]._id, fields,
+      collectionId: "6414a4b48fdbc81367c66506", itemId: filtered[0]._id, fields,
   });
   const publishedItem = await webflow.publishItems({
-    collectionId: "6414a4b48fdbc81367c66506", itemIds: [updatedItem._id], live: true,
+      collectionId: "6414a4b48fdbc81367c66506", itemIds: [updatedItem._id], live: true,
   })
-  console.log('Updated: ' + updatedItem.thumbnail)
-}
+  alert('Updated: ' + updatedItem.thumbnail)
+  }
 
+// alert('Hello World')

@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "name": "te koop"
+    },
+    {
+        "id": 2,
+        "name": "te huur"
+    },
+    {
+        "id": 3,
+        "name": "verkocht"
+    },
+    {
+        "id": 4,
+        "name": "verhuurd"
+    },
+    {
+        "id": 5,
+        "name": "optie te koop"
+    },
+    {
+        "id": 6,
+        "name": "optie te huur"
+    },
+    {
+        "id": 8,
+        "name": "opgeschort verk."
+    },
+    {
+        "id": 9,
+        "name": "opgeschort verh."
+    },
+    {
+        "id": 10,
+        "name": "uitgesteld verk."
+    },
+    {
+        "id": 11,
+        "name": "uitgesteld verh."
+    },
+    {
+        "id": 12,
+        "name": "optie eig. verk."
+    },
+    {
+        "id": 13,
+        "name": "optie eig. verh."
+    },
+    {
+        "id": 14,
+        "name": "verkocht met opsch. voorwaarde"
+    },
+    {
+        "id": 15,
+        "name": "te koop"
+    },
+    {
+        "id": 16,
+        "name": "optie te koop"
+    },
+    {
+        "id": 17,
+        "name": "verkocht"
+    },
+    {
+        "id": 19,
+        "name": "prospectie"
+    },
+    {
+        "id": 20,
+        "name": "voorbereiding"
+    },
+    {
+        "id": 21,
+        "name": "gereserveerd"
+    },
+    {
+        "id": 22,
+        "name": "compromis"
+    },
+    {
+        "id": 23,
+        "name": "prospectie verhuur"
+    },
+    {
+        "id": 24,
+        "name": "waardebepaling v."
+    },
+    {
+        "id": 25,
+        "name": "waardebepaling h."
+    },
+    {
+        "id": 26,
+        "name": "waardebepaling l.r."
+    },
+    {
+        "id": 27,
+        "name": "voorbereiding (huur)"
+    },
+    {
+        "id": 28,
+        "name": "voorbereiding (lijfrente)"
+    }
+]

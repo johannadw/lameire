@@ -1,0 +1,852 @@
+[
+    {
+        "id": 1,
+        "categoryId": 1,
+        "name": "huis"
+    },
+    {
+        "id": 2,
+        "categoryId": 1,
+        "name": "buitengewoon huis"
+    },
+    {
+        "id": 3,
+        "categoryId": 1,
+        "name": "appartementsgebouw"
+    },
+    {
+        "id": 4,
+        "categoryId": 1,
+        "name": "boerderij"
+    },
+    {
+        "id": 5,
+        "categoryId": 1,
+        "name": "bungalow"
+    },
+    {
+        "id": 6,
+        "categoryId": 1,
+        "name": "garagebox"
+    },
+    {
+        "id": 7,
+        "categoryId": 1,
+        "name": "bel-etage"
+    },
+    {
+        "id": 8,
+        "categoryId": 1,
+        "name": "gebouw voor gemengd gebruik"
+    },
+    {
+        "id": 9,
+        "categoryId": 1,
+        "name": "hoeve"
+    },
+    {
+        "id": 10,
+        "categoryId": 1,
+        "name": "chalet"
+    },
+    {
+        "id": 12,
+        "categoryId": 1,
+        "name": "herenhuis"
+    },
+    {
+        "id": 13,
+        "categoryId": 1,
+        "name": "villa"
+    },
+    {
+        "id": 14,
+        "categoryId": 1,
+        "name": "kasteel"
+    },
+    {
+        "id": 16,
+        "categoryId": 1,
+        "name": "ander pand"
+    },
+    {
+        "id": 17,
+        "categoryId": 2,
+        "name": "appartement"
+    },
+    {
+        "id": 18,
+        "categoryId": 2,
+        "name": "duplex"
+    },
+    {
+        "id": 19,
+        "categoryId": 2,
+        "name": "penthouse"
+    },
+    {
+        "id": 20,
+        "categoryId": 2,
+        "name": "flat"
+    },
+    {
+        "id": 21,
+        "categoryId": 2,
+        "name": "studio"
+    },
+    {
+        "id": 22,
+        "categoryId": 2,
+        "name": "triplex"
+    },
+    {
+        "id": 23,
+        "categoryId": 2,
+        "name": "loft"
+    },
+    {
+        "id": 25,
+        "categoryId": 2,
+        "name": "gelijkvloerse verdieping"
+    },
+    {
+        "id": 26,
+        "categoryId": 3,
+        "name": "bouwgrond"
+    },
+    {
+        "id": 27,
+        "categoryId": 3,
+        "name": "velden"
+    },
+    {
+        "id": 28,
+        "categoryId": 3,
+        "name": "onbebouwbare grond"
+    },
+    {
+        "id": 29,
+        "categoryId": 3,
+        "name": "recreatief terrein"
+    },
+    {
+        "id": 30,
+        "categoryId": 3,
+        "name": "weide"
+    },
+    {
+        "id": 31,
+        "categoryId": 3,
+        "name": "landbouw grond"
+    },
+    {
+        "id": 32,
+        "categoryId": 3,
+        "name": "bos"
+    },
+    {
+        "id": 33,
+        "categoryId": 3,
+        "name": "boomgaard"
+    },
+    {
+        "id": 34,
+        "categoryId": 3,
+        "name": "grond"
+    },
+    {
+        "id": 35,
+        "categoryId": 4,
+        "name": "kantoorgebouw"
+    },
+    {
+        "id": 36,
+        "categoryId": 4,
+        "name": "villa"
+    },
+    {
+        "id": 37,
+        "categoryId": 4,
+        "name": "gebouw voor gemengd gebruik"
+    },
+    {
+        "id": 38,
+        "categoryId": 4,
+        "name": "herenhuis"
+    },
+    {
+        "id": 40,
+        "categoryId": 4,
+        "name": "kantoor"
+    },
+    {
+        "id": 41,
+        "categoryId": 4,
+        "name": "gebouw"
+    },
+    {
+        "id": 42,
+        "categoryId": 5,
+        "name": "individuele handelszaak"
+    },
+    {
+        "id": 43,
+        "categoryId": 5,
+        "name": "taverne"
+    },
+    {
+        "id": 44,
+        "categoryId": 5,
+        "name": "commercieel centrum"
+    },
+    {
+        "id": 45,
+        "categoryId": 5,
+        "name": "gebouw voor gemengd gebruik"
+    },
+    {
+        "id": 46,
+        "categoryId": 6,
+        "name": "industrieel gebouw"
+    },
+    {
+        "id": 47,
+        "categoryId": 6,
+        "name": "gebouw voor gemengd gebruik"
+    },
+    {
+        "id": 48,
+        "categoryId": 7,
+        "name": "buitenstaanplaats"
+    },
+    {
+        "id": 49,
+        "categoryId": 7,
+        "name": "binnenstaanplaats"
+    },
+    {
+        "id": 50,
+        "categoryId": 7,
+        "name": "open garagebox"
+    },
+    {
+        "id": 51,
+        "categoryId": 7,
+        "name": "gesloten garagebox"
+    },
+    {
+        "id": 52,
+        "categoryId": 7,
+        "name": "carport"
+    },
+    {
+        "id": 53,
+        "categoryId": 6,
+        "name": "opslagplaats"
+    },
+    {
+        "id": 54,
+        "categoryId": 5,
+        "name": "horeca"
+    },
+    {
+        "id": 55,
+        "categoryId": 5,
+        "name": "voeding"
+    },
+    {
+        "id": 56,
+        "categoryId": 5,
+        "name": "boekhandel/tabak/bloem"
+    },
+    {
+        "id": 57,
+        "categoryId": 5,
+        "name": "modezaak/textiel"
+    },
+    {
+        "id": 58,
+        "categoryId": 5,
+        "name": "wagens/fietsen"
+    },
+    {
+        "id": 59,
+        "categoryId": 5,
+        "name": "kapsalon / esthetiek"
+    },
+    {
+        "id": 60,
+        "categoryId": 5,
+        "name": "andere"
+    },
+    {
+        "id": 61,
+        "categoryId": 6,
+        "name": "andere"
+    },
+    {
+        "id": 62,
+        "categoryId": 2,
+        "name": "andere"
+    },
+    {
+        "id": 63,
+        "categoryId": 3,
+        "name": "andere"
+    },
+    {
+        "id": 64,
+        "categoryId": 4,
+        "name": "andere"
+    },
+    {
+        "id": 65,
+        "categoryId": 5,
+        "name": "baanwinkel"
+    },
+    {
+        "id": 66,
+        "categoryId": 7,
+        "name": "andere"
+    },
+    {
+        "id": 69,
+        "categoryId": 2,
+        "name": "app.complex gemengd gebruik"
+    },
+    {
+        "id": 70,
+        "categoryId": 1,
+        "name": "landhuis"
+    },
+    {
+        "id": 71,
+        "categoryId": 1,
+        "name": "charmant huis"
+    },
+    {
+        "id": 72,
+        "categoryId": 2,
+        "name": "app. in charmant huis"
+    },
+    {
+        "id": 73,
+        "categoryId": 2,
+        "name": "gelijkvloerse verd. + tuin"
+    },
+    {
+        "id": 74,
+        "categoryId": 2,
+        "name": "appartement met tuin"
+    },
+    {
+        "id": 76,
+        "categoryId": 4,
+        "name": "gemengd gebruik"
+    },
+    {
+        "id": 77,
+        "categoryId": 4,
+        "name": "archieven"
+    },
+    {
+        "id": 78,
+        "categoryId": 3,
+        "name": "Industrieel terrein"
+    },
+    {
+        "id": 79,
+        "categoryId": 6,
+        "name": "productiegebouw"
+    },
+    {
+        "id": 80,
+        "categoryId": 6,
+        "name": "atelier"
+    },
+    {
+        "id": 81,
+        "categoryId": 6,
+        "name": "koelplaats"
+    },
+    {
+        "id": 82,
+        "categoryId": 6,
+        "name": "kantoren & magazijn"
+    },
+    {
+        "id": 83,
+        "categoryId": 6,
+        "name": "kantoor"
+    },
+    {
+        "id": 84,
+        "categoryId": 7,
+        "name": "berging - archieven"
+    },
+    {
+        "id": 85,
+        "categoryId": 7,
+        "name": "garage + berging"
+    },
+    {
+        "id": 86,
+        "categoryId": 7,
+        "name": "dubbele garage"
+    },
+    {
+        "id": 87,
+        "categoryId": 1,
+        "name": "vakantiewoning"
+    },
+    {
+        "id": 88,
+        "categoryId": 3,
+        "name": "kmo-terrein"
+    },
+    {
+        "id": 89,
+        "categoryId": 1,
+        "name": "eengezinswoning"
+    },
+    {
+        "id": 90,
+        "categoryId": 1,
+        "name": "koppelvilla"
+    },
+    {
+        "id": 93,
+        "categoryId": 2,
+        "name": "studentenkamer"
+    },
+    {
+        "id": 94,
+        "categoryId": 2,
+        "name": "dakappartement"
+    },
+    {
+        "id": 95,
+        "categoryId": 2,
+        "name": "service flats"
+    },
+    {
+        "id": 96,
+        "categoryId": 1,
+        "name": "nieuwbouw woning"
+    },
+    {
+        "id": 97,
+        "categoryId": 2,
+        "name": "nieuwbouw appartement"
+    },
+    {
+        "id": 98,
+        "categoryId": 5,
+        "name": "afhaalcentrum"
+    },
+    {
+        "id": 99,
+        "categoryId": 5,
+        "name": "bed & breakfast"
+    },
+    {
+        "id": 101,
+        "categoryId": 5,
+        "name": "brood / banketbakkerij"
+    },
+    {
+        "id": 102,
+        "categoryId": 5,
+        "name": "broodjeszaak"
+    },
+    {
+        "id": 103,
+        "categoryId": 5,
+        "name": "café / bar"
+    },
+    {
+        "id": 104,
+        "categoryId": 5,
+        "name": "café / bar / room"
+    },
+    {
+        "id": 105,
+        "categoryId": 5,
+        "name": "café / restaurant"
+    },
+    {
+        "id": 106,
+        "categoryId": 5,
+        "name": "café / restaurant / zalen"
+    },
+    {
+        "id": 107,
+        "categoryId": 5,
+        "name": "cafetaria / snackbar"
+    },
+    {
+        "id": 108,
+        "categoryId": 5,
+        "name": "camping / recreatiebedrijf"
+    },
+    {
+        "id": 109,
+        "categoryId": 5,
+        "name": "chinees restaurant"
+    },
+    {
+        "id": 110,
+        "categoryId": 5,
+        "name": "casco horecaruimte"
+    },
+    {
+        "id": 111,
+        "categoryId": 5,
+        "name": "catering"
+    },
+    {
+        "id": 112,
+        "categoryId": 5,
+        "name": "coffeeshop"
+    },
+    {
+        "id": 113,
+        "categoryId": 5,
+        "name": "club"
+    },
+    {
+        "id": 114,
+        "categoryId": 5,
+        "name": "dagexploitatie"
+    },
+    {
+        "id": 115,
+        "categoryId": 5,
+        "name": "danscentrum"
+    },
+    {
+        "id": 116,
+        "categoryId": 5,
+        "name": "delicatessenwinkel"
+    },
+    {
+        "id": 117,
+        "categoryId": 5,
+        "name": "discotheek / dancing"
+    },
+    {
+        "id": 118,
+        "categoryId": 5,
+        "name": "discotheek / nachtcafé"
+    },
+    {
+        "id": 119,
+        "categoryId": 5,
+        "name": "eetcafé"
+    },
+    {
+        "id": 120,
+        "categoryId": 5,
+        "name": "gamecentre"
+    },
+    {
+        "id": 121,
+        "categoryId": 5,
+        "name": "gebakwinkel"
+    },
+    {
+        "id": 122,
+        "categoryId": 5,
+        "name": "grand-café"
+    },
+    {
+        "id": 123,
+        "categoryId": 5,
+        "name": "koffieshop / koffiecorner"
+    },
+    {
+        "id": 124,
+        "categoryId": 5,
+        "name": "loungeclub"
+    },
+    {
+        "id": 125,
+        "categoryId": 5,
+        "name": "partyboot"
+    },
+    {
+        "id": 126,
+        "categoryId": 5,
+        "name": "partycentrum"
+    },
+    {
+        "id": 127,
+        "categoryId": 5,
+        "name": "pension"
+    },
+    {
+        "id": 128,
+        "categoryId": 5,
+        "name": "hotel"
+    },
+    {
+        "id": 129,
+        "categoryId": 5,
+        "name": "hotel / restaurant"
+    },
+    {
+        "id": 130,
+        "categoryId": 5,
+        "name": "hotel / restaurant / zalen"
+    },
+    {
+        "id": 131,
+        "categoryId": 5,
+        "name": "hostel"
+    },
+    {
+        "id": 133,
+        "categoryId": 5,
+        "name": "ijssalon"
+    },
+    {
+        "id": 134,
+        "categoryId": 5,
+        "name": "lunchroom"
+    },
+    {
+        "id": 135,
+        "categoryId": 5,
+        "name": "overige horeca "
+    },
+    {
+        "id": 136,
+        "categoryId": 5,
+        "name": "pizzeria"
+    },
+    {
+        "id": 137,
+        "categoryId": 5,
+        "name": "pizzeria + bezorgservice"
+    },
+    {
+        "id": 138,
+        "categoryId": 5,
+        "name": "restaurant"
+    },
+    {
+        "id": 139,
+        "categoryId": 5,
+        "name": "restaurant / zalen"
+    },
+    {
+        "id": 140,
+        "categoryId": 5,
+        "name": "shoarma / grillroom"
+    },
+    {
+        "id": 141,
+        "categoryId": 5,
+        "name": "shoarma/grillr. + bezorgserv."
+    },
+    {
+        "id": 142,
+        "categoryId": 5,
+        "name": "snack- / viswagen"
+    },
+    {
+        "id": 143,
+        "categoryId": 5,
+        "name": "strandpaviljoen"
+    },
+    {
+        "id": 144,
+        "categoryId": 5,
+        "name": "sauna"
+    },
+    {
+        "id": 145,
+        "categoryId": 5,
+        "name": "tearoom"
+    },
+    {
+        "id": 146,
+        "categoryId": 5,
+        "name": "traiteur "
+    },
+    {
+        "id": 147,
+        "categoryId": 5,
+        "name": "viswinkel"
+    },
+    {
+        "id": 148,
+        "categoryId": 5,
+        "name": "wellness"
+    },
+    {
+        "id": 149,
+        "categoryId": 5,
+        "name": "wegrestaurant"
+    },
+    {
+        "id": 150,
+        "categoryId": 5,
+        "name": "wokrestaurant"
+    },
+    {
+        "id": 151,
+        "categoryId": 5,
+        "name": "winkelpand"
+    },
+    {
+        "id": 152,
+        "categoryId": 5,
+        "name": "zalen / partycentrum"
+    },
+    {
+        "id": 154,
+        "categoryId": 1,
+        "name": "rusthuizen"
+    },
+    {
+        "id": 155,
+        "categoryId": 4,
+        "name": "uitzondelijke villa"
+    },
+    {
+        "id": 156,
+        "categoryId": 2,
+        "name": "uitzonderlijk appartement"
+    },
+    {
+        "id": 157,
+        "categoryId": 7,
+        "name": "kelder"
+    },
+    {
+        "id": 158,
+        "categoryId": 1,
+        "name": "cabin"
+    },
+    {
+        "id": 159,
+        "categoryId": 3,
+        "name": "terrein voor ondernemingen"
+    },
+    {
+        "id": 160,
+        "categoryId": 2,
+        "name": "kamer"
+    },
+    {
+        "id": 161,
+        "categoryId": 3,
+        "name": "bouwgrond (projecten)"
+    },
+    {
+        "id": 162,
+        "categoryId": 5,
+        "name": "commercieel gelijkvloers"
+    },
+    {
+        "id": 163,
+        "categoryId": 5,
+        "name": "snack"
+    },
+    {
+        "id": 164,
+        "categoryId": 5,
+        "name": "commerciële building"
+    },
+    {
+        "id": 165,
+        "categoryId": 2,
+        "name": "assistentiewoning"
+    },
+    {
+        "id": 167,
+        "categoryId": 7,
+        "name": "fietsenberging"
+    },
+    {
+        "id": 168,
+        "categoryId": 6,
+        "name": "bedrijfsgebouw"
+    },
+    {
+        "id": 169,
+        "categoryId": 6,
+        "name": "KMO-unit"
+    },
+    {
+        "id": 170,
+        "categoryId": 7,
+        "name": "parking"
+    },
+    {
+        "id": 171,
+        "categoryId": 4,
+        "name": "kantoor + res."
+    },
+    {
+        "id": 172,
+        "categoryId": 4,
+        "name": "res. + kantoor"
+    },
+    {
+        "id": 173,
+        "categoryId": 1,
+        "name": "grachtenpand - NL only"
+    },
+    {
+        "id": 174,
+        "categoryId": 1,
+        "name": "stacaravan - NL only"
+    },
+    {
+        "id": 175,
+        "categoryId": 1,
+        "name": "woonwagen - NL only"
+    },
+    {
+        "id": 176,
+        "categoryId": 2,
+        "name": "bovenwoning - NL only"
+    },
+    {
+        "id": 177,
+        "categoryId": 2,
+        "name": "benedenwoning - NL only"
+    },
+    {
+        "id": 178,
+        "categoryId": 2,
+        "name": "maisonnette - NL only"
+    },
+    {
+        "id": 179,
+        "categoryId": 2,
+        "name": "galerijflat - NL only"
+    },
+    {
+        "id": 180,
+        "categoryId": 2,
+        "name": "portiekflat - NL only"
+    },
+    {
+        "id": 181,
+        "categoryId": 2,
+        "name": "portiekwoning - NL only"
+    },
+    {
+        "id": 182,
+        "categoryId": 2,
+        "name": "dubbel benedenhuis - NL only"
+    },
+    {
+        "id": 183,
+        "categoryId": 2,
+        "name": "tussenverdieping - NL only"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "huis"
+    },
+    {
+        "id": 2,
+        "name": "appartement"
+    },
+    {
+        "id": 3,
+        "name": "grond"
+    },
+    {
+        "id": 4,
+        "name": "kantoor"
+    },
+    {
+        "id": 5,
+        "name": "commercieel"
+    },
+    {
+        "id": 6,
+        "name": "industrieel"
+    },
+    {
+        "id": 7,
+        "name": "garage / parking"
+    }
+]
